@@ -52,7 +52,6 @@ import { StateService } from '../../../@core/utils';
         <ngx-theme-settings></ngx-theme-settings>
       </nb-sidebar>
     </nb-layout>
-    <ngx-toggle-settings-button></ngx-toggle-settings-button>
   `,
 })
 
@@ -61,6 +60,8 @@ import { StateService } from '../../../@core/utils';
 //     <i class="ion ion-social-github"></i> <span>Support Us</span>
 //   </a>
 // </nb-sidebar-header>
+
+// <ngx-toggle-settings-button></ngx-toggle-settings-button>
 
 export class SampleLayoutComponent implements OnDestroy {
 
