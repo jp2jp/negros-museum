@@ -3,8 +3,13 @@
 @import '~@nebular/theme/styles/global/breakpoints';
 
 @include nb-install-component() {
+
   nb-layout-column.small {
     flex: 0.15 !important;
+  }
+
+  nb-layout-column {
+    border-top: 1px solid #ebeef2;
   }
 
   nb-sidebar.settings-sidebar {
@@ -48,7 +53,9 @@
 
   nb-sidebar.menu-sidebar {
 
-    margin-top: nb-theme(sidebar-header-gap);
+    // margin-top: nb-theme(sidebar-header-gap);
+    margin-top: 0;
+    border-top: 1px solid #ebeef2;
 
     @include nb-for-theme(corporate) {
       margin-top: 0;
@@ -68,6 +75,10 @@
     }
 
     /deep/ .scrollable {
+      padding-top: 0;
+      .menu-item:first-child {
+        border-top: none;
+      }
       @include nb-for-theme(corporate) {
         padding-top: 0;
 
@@ -154,7 +165,7 @@
   @include media-breakpoint-down(xs) {
     .main-content {
       padding: 0.75rem !important;
-
+      border-top: 1px solid #ebeef2;
     }
   }
 

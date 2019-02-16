@@ -3,6 +3,7 @@
 @import '~@nebular/theme/styles/global/breakpoints';
 
 @include nb-install-component() {
+
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -32,7 +33,7 @@
     display: flex;
     align-items: center;
     width: auto;
-
+    // background: none;
     .navigation {
       @include nb-ltr(padding-right, nb-theme(padding));
       @include nb-rtl(padding-left, nb-theme(padding));
@@ -210,3 +211,4 @@
     }
   }
 }
+
